@@ -3,11 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset css -->
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- шрифти -->
+    <!-- Roboto 300 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto 400 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- PT Serif 400 (для лого) -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet" />
+    <!-- Playfair Display 400 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <!-- visually hidden -->
+    <link rel="stylesheet" href="visually-hidden.css" />
+    <!-- мої стилі -->
+    <link rel="stylesheet" href="style.css" />
     <title>ColorRave</title>
   </head>
   <body>
-    <header></header>
-    <body></body>
+    <header>
+      <div class="container container-flex">
+        <a class="logo" href="">
+          <img src="./assets/svg/logo-header.svg" alt="logo" />
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li>
+              <a href="">
+                <p class="nav-text now-nav-text">Main page</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="nav-text">Benefits</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="nav-text">Advantages</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="nav-text">Reviews</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="nav-text">Contacts</p>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="nav-text">Order</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="ul-language">
+          <li>
+            <a href=""><p class="language-text">Ua</p></a>
+          </li>
+          <li>
+            <a href=""><p class="language-text now-language">Eng</p></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <body>
+      <section class="section-hero">
+        <div class="container">
+          <h2 class="visually-hidden">Hero section</h2>
+          <a class="a-hero-img" href=""><img src="./assets/svg/logo-header.svg" alt="logo" /></a>
+          <p class="text-logo">С&R</p>
+          <h2 class="h2-hero">ColoRawe</h2>
+          <h3 class="h3-hero">Your dream Nike</h3>
+          <div class="box-text">
+            <p class="text-hero">
+              On this site you can find custom Nike sneakers of your dreams. The original company
+              can`t create such beautiful sneakers as we do.<br />
+              Good luck finding your way in the world of custom sneakers.
+            </p>
+          </div>
+          <a href="">
+            <button class="button-hero"><p>Buy my Nike</p></button>
+          </a>
+        </div>
+      </section>
+      <section class="client-section">
+        <h2 class="visually-hidden">Benefits and Advantages</h2>
+        <div class="container">
+          <ul class="client-ul">
+            <li class="client-li">
+              <div class="text-div">
+                <p class="client-text">Premium Quality</p>
+              </div>
+              <img class="client-img" src="./assets/svg/stars-client.svg" alt="stars" />
+            </li>
+            <li class="client-li biggest-li-client">
+              <div class="text-div">
+                <p class="client-text">Indelible paint</p>
+              </div>
+              <img class="client-img" src="./assets/svg/paints-client.svg" alt="paints" />
+            </li>
+            <li class="client-li">
+              <div class="text-div">
+                <p class="client-text">Fast Shopping</p>
+              </div>
+              <img class="client-img" src="./assets/svg/van-client.svg" alt="van" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reviews-section">
+        <div class="container">
+          <h2 class="reviews-header">Reviews</h2>
+          <ul class="reviews-ul">
+            <li class="reviews-li first-reviews-li">
+              <div class="comment-div">
+                <p class="client-comment">
+                  Sneakers are very comfortable and well painted, nothing has worn off in a year.
+                </p>
+              </div>
+              <p class="client-date">25.11</p>
+              <!-- -->
+              <div class="account-div">
+                <img src="./assets/img/first-person.png" alt="" />
+                <div class="text-account-div">
+                  <p class="client-name">John Teylor</p>
+                  <p class="client-session">With us from 2018</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-li second-reviews-li">
+              <div class="comment-div">
+                <p class="client-comment">
+                  I'm very happy with this color scheme. They match all my clothes.
+                </p>
+              </div>
+              <p class="client-date">05.01</p>
+              <!-- -->
+              <div class="account-div">
+                <img src="./assets/img/second-person.png" alt="" />
+                <div class="text-account-div">
+                  <p class="client-name">Elizabeth Garsia</p>
+                  <p class="client-session">With us from 2020</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews-li third-reviews-li">
+              <div class="comment-div">
+                <p class="client-comment">
+                  Just right if you need to go to a party. I use them actively, the paint is super.
+                </p>
+              </div>
+              <p class="client-date">18.06</p>
+              <!-- -->
+              <div class="account-div">
+                <img src="./assets/img/third-person.png" alt="" />
+                <div class="text-account-div">
+                  <p class="client-name">Tom Maquare</p>
+                  <p class="client-session">With us from 2019</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </body>
+    <section></section>
     <footer></footer>
   </body>
 </html>
