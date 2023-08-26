@@ -122,10 +122,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* мої додаткові речі */
-a {
-  text-decoration: none;
-}
-* {
-  box-sizing: border-box;
-}

@@ -7,6 +7,13 @@
   --background-button: #8e32c6;
   --color-date: #d8d8d8;
   --color-placeholder: #959595;
+  --after-section: #9b9b9b;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
@@ -151,15 +158,28 @@ header {
   background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
   background: url(./assets/img/background-forSVGs.webp) center / cover no-repeat;
 }
+/*  */
 .client-ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 50px;
+  padding: 25px 0px;
   border: 5px solid var(--background-button);
+}
+.client-li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.li1 {
+  padding: 0 50px;
+}
+.li2 {
+  padding: 0 50px;
 }
 .client-img {
   display: block;
+
   margin: 0 auto;
 }
 .clinet-li {
@@ -191,6 +211,7 @@ header {
   display: flex;
   justify-content: center;
   width: 150px;
+  margin: 0 auto;
 }
 .reviews-section {
   background: rgb(142, 50, 198);
@@ -282,4 +303,159 @@ header {
 }
 .comment-div {
   width: 228px;
+}
+.form-section {
+  padding-top: 20px;
+  padding-bottom: 37px;
+  background: rgb(142, 50, 198);
+  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: url(./assets/img/input-background.webp) center / cover no-repeat;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-wrapper {
+  width: 690px;
+  max-width: 100%;
+}
+.wrapper-form {
+  position: relative;
+}
+.wrapper-input {
+  width: 690px;
+  height: 60px;
+  border-radius: 50px;
+  background: #fff;
+}
+.wrapper-button {
+  background-color: transparent;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 0;
+}
+input::placeholder {
+  color: #959595;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+input:not(:last-child) {
+  margin-bottom: 20px;
+}
+.small-input {
+  width: 580px;
+  height: 50px;
+  border-radius: 50px;
+  background: #fff;
+}
+.form-header {
+  color: #fff;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 33px;
+  line-height: normal;
+}
+.final-button {
+  margin-top: 20px;
+  display: block;
+  width: 248px;
+  height: 68px;
+  border-radius: 16px;
+  background: #8e32c6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final-button > p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer {
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background: #021635;
+}
+/* не застосувалось */
+.footer-ul::after {
+  content: '';
+  width: 1110px;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  background: var(--after-section);
+}
+/* .footerli-after::after {
+  content: '';
+  width: 1110px;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  background: var(--after-section);
+} */
+.footer-li {
+  display: flex;
+  justify-content: space-between;
+}
+.question-email {
+  text-decoration: underline;
+  color: var(--attention-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.question-p {
+  color: var(--attention-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer2-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer2-p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.margin-p {
+  margin-bottom: 7px;
+}
+.footerlogo-text {
+  width: 178px;
+  height: 86px;
+  flex-shrink: 0;
+  color: var(--attention-color);
+  font-family: 'PT Serif', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.footer-logo {
+  width: 108px;
+  height: 81px;
 }
