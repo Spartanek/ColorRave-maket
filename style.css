@@ -332,10 +332,23 @@ form {
 }
 .wrapper-button {
   background-color: transparent;
-  border-radius: 50%;
-  aspect-ratio: 1;
+  border-radius: 50px;
   position: absolute;
-  right: 0;
+  right: 80px;
+  border: none;
+  padding: 13px 0px;
+}
+.wrapper-button > p {
+  color: #8d8d8d;
+  font-family: 'Roboto';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.input {
+  display: flex;
+  align-items: center;
 }
 input::placeholder {
   color: #959595;
@@ -397,6 +410,7 @@ input:not(:last-child) {
   margin-top: 20px;
   margin-bottom: 24px;
   background: var(--after-section);
+  display: block;
 }
 /* .footerli-after::after {
   content: '';
