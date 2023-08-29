@@ -317,10 +317,7 @@ form {
   align-items: center;
   flex-direction: column;
 }
-.form-wrapper {
-  width: 690px;
-  max-width: 100%;
-}
+
 .wrapper-form {
   position: relative;
 }
@@ -346,10 +343,7 @@ form {
   font-weight: 400;
   line-height: normal;
 }
-.input {
-  display: flex;
-  align-items: center;
-}
+
 input::placeholder {
   color: #959595;
   font-family: 'Roboto', sans-serif;
