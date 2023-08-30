@@ -8,6 +8,13 @@
   --color-date: #d8d8d8;
   --color-placeholder: #959595;
   --after-section: #9b9b9b;
+  --background-gradient1: rgb(142, 50, 198);
+  --background-gradient2: linear-gradient(
+    212deg,
+    rgba(142, 50, 198, 1) 29%,
+    rgba(1, 45, 99, 1) 55%
+  );
+  --button-current: green;
 }
 a {
   text-decoration: none;
@@ -86,8 +93,8 @@ header {
 }
 .section-hero {
   padding: 90px 0px 150px;
-  background: rgb(142, 50, 198);
-  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: var(--background-gradient1);
+  background: var(var(--background-gradient2));
   background: url(./assets/img/hero-background.webp) center / cover no-repeat;
 }
 .a-hero-img {
@@ -141,12 +148,11 @@ header {
   background: var(--background-button);
 }
 .button-hero:hover {
-  background: rgb(142, 50, 198);
-  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: var(--button-current);
 }
 .button-hero > p {
   color: var(--attention-color);
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -154,8 +160,8 @@ header {
 }
 .client-section {
   padding: 105px 0px;
-  background: rgb(142, 50, 198);
-  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: var(--background-gradient1);
+  background: var(--background-gradient2);
   background: url(./assets/img/background-forSVGs.webp) center / cover no-repeat;
 }
 /*  */
@@ -188,6 +194,27 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.after-div1::after {
+  content: '';
+  background-image: url(./assets/img/star-benefit.png);
+  width: 240px;
+  height: 240px;
+  background-repeat: no-repeat;
+}
+.after-div2::after {
+  content: '';
+  width: 240px;
+  height: 240px;
+  background-image: url(./assets/img/van-benefit.png);
+  background-repeat: no-repeat;
+}
+.before-div1::before {
+  width: 240px;
+  height: 240px;
+  content: '';
+  background-image: url(./assets/img/paint-benefit.png);
+  background-repeat: no-repeat;
+}
 .biggest-li-client {
   display: flex;
   flex-direction: column-reverse;
@@ -205,17 +232,19 @@ header {
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
+  width: 150px;
   line-height: normal;
 }
 .text-div {
+  /*  */
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  width: 150px;
   margin: 0 auto;
 }
 .reviews-section {
-  background: rgb(142, 50, 198);
-  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: var(--background-gradient1);
+  background: var(--background-gradient2);
   padding-top: 25px;
   padding-bottom: 114px;
   background-image: url(./assets/img/plants.webp), url(./assets/img/background-forSVGs.webp);
@@ -229,7 +258,7 @@ header {
   color: var(--attention-color);
   margin-bottom: 24px;
   text-align: center;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -307,8 +336,8 @@ header {
 .form-section {
   padding-top: 20px;
   padding-bottom: 37px;
-  background: rgb(142, 50, 198);
-  background: linear-gradient(212deg, rgba(142, 50, 198, 1) 29%, rgba(1, 45, 99, 1) 55%);
+  background: var(--background-gradient1);
+  background: var(--background-gradient2);
   background: url(./assets/img/input-background.webp) center / cover no-repeat;
 }
 form {
@@ -326,6 +355,24 @@ form {
   height: 60px;
   border-radius: 50px;
   background: #fff;
+  padding: 12px 0px;
+  padding-left: 12px;
+  color: #959595;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 12px 0px;
+  padding-left: 25px;
+}
+.wrapper-input::placeholder {
+  color: #959595;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .wrapper-button {
   background-color: transparent;
@@ -335,19 +382,31 @@ form {
   border: none;
   padding: 13px 0px;
 }
+/* .wrapper-button:hover {
+  background: var(--button-current);
+  color: var(--attention-color);
+  border-radius: 50px;
+  position: absolute;
+  right: 80px;
+  border: none;
+  padding: 13px 80px;
+}
+.wrapper-button:hover > p {
+  color: var(--attention-color);
+} */
 .wrapper-button > p {
   color: #8d8d8d;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-input::placeholder {
+.small-input::placeholder {
   color: #959595;
   font-family: 'Roboto', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -360,10 +419,18 @@ input:not(:last-child) {
   height: 50px;
   border-radius: 50px;
   background: #fff;
+  color: #959595;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 11px 0px;
+  padding-left: 25px;
 }
 .form-header {
   color: #fff;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -381,6 +448,9 @@ input:not(:last-child) {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.final-button:hover {
+  background: var(--button-current);
 }
 
 .final-button > p {
@@ -402,7 +472,6 @@ input:not(:last-child) {
   width: 1110px;
   height: 1px;
   margin-top: 20px;
-  margin-bottom: 24px;
   background: var(--after-section);
   display: block;
 }
@@ -438,7 +507,15 @@ input:not(:last-child) {
 .footer2-ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+}
+.li-flexend {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footer2-ul:first-child {
+  margin-top: 24px;
 }
 .footer2-p {
   color: #fff;
@@ -452,18 +529,17 @@ input:not(:last-child) {
   margin-bottom: 7px;
 }
 .footerlogo-text {
-  width: 178px;
-  height: 86px;
-  flex-shrink: 0;
   color: var(--attention-color);
   font-family: 'PT Serif', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  text-align: center;
 }
 .footer-logo {
   width: 108px;
   height: 81px;
+}
+.margin-liafter {
+  margin-top: 25px;
 }
