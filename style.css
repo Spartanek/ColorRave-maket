@@ -15,6 +15,7 @@
     rgba(1, 45, 99, 1) 55%
   );
   --button-current: green;
+  --button-active: yellowgreen;
 }
 a {
   text-decoration: none;
@@ -97,7 +98,7 @@ header {
 .section-hero {
   padding: 90px 0px 150px;
   background: var(--background-gradient1);
-  background: var(var(--background-gradient2));
+  background: var(--background-gradient2);
   background: url(./assets/img/hero-background.webp) center / cover no-repeat;
 }
 .a-hero-img {
@@ -152,6 +153,9 @@ header {
 }
 .button-hero:hover {
   background: var(--button-current);
+}
+.button-hero:active {
+  background: var(--button-active);
 }
 .button-hero > p {
   color: var(--attention-color);
@@ -388,7 +392,10 @@ form {
   padding: 13px 0px;
 }
 .wrapper-button:hover p {
-  color: green;
+  color: var(--button-current);
+}
+.wrapper-button:active p {
+  color: var(--button-active);
 }
 /* .wrapper-button:hover > p {
   color: var(--attention-color);
@@ -451,7 +458,9 @@ input:not(:last-child) {
 .final-button:hover {
   background: var(--button-current);
 }
-
+.final-button:active {
+  background: var(--button-active);
+}
 .final-button > p {
   color: #fff;
   font-family: 'Roboto', sans-serif;
