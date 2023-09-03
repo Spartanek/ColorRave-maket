@@ -19,6 +19,9 @@
 a {
   text-decoration: none;
 }
+img {
+  display: block;
+}
 * {
   box-sizing: border-box;
 }
@@ -265,31 +268,7 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-.firstperson-div::before {
-  width: 31px;
-  height: 31px;
-  display: block;
-  border-radius: 31px;
-  content: '';
-  background-repeat: no-repeat;
-  background-image: url(./assets/img/first-person.png);
-}
-.secondperson-div::before {
-  width: 31px;
-  height: 31px;
-  border-radius: 31px;
-  background-repeat: no-repeat;
-  content: '';
-  background-image: url(./assets/img/second-person.png);
-}
-.thirdperson-div::before {
-  width: 31px;
-  height: 31px;
-  border-radius: 31px;
-  background-repeat: no-repeat;
-  content: '';
-  background-image: url(./assets/img/third-person.png);
-}
+
 .reviews-ul {
   display: flex;
   justify-content: center;
@@ -352,7 +331,6 @@ header {
 }
 .account-div {
   display: flex;
-  justify-content: center;
 }
 .text-account-div {
   margin-left: 5px;
@@ -410,7 +388,7 @@ form {
   padding: 13px 0px;
 }
 .wrapper-button:hover p {
-  color: red;
+  color: green;
 }
 /* .wrapper-button:hover > p {
   color: var(--attention-color);
